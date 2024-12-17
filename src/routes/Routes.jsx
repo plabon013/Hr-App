@@ -1,10 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Root from "../pages/Root/Root";
-import Login from "../pages/Login/Login";
-import ErrorPage from "../pages/ErrorPage/ErrorPage";
-import List from "../pages/List/List";
-import SinglePage from "../pages/SinglePage/SinglePage";
-import Form from "../pages/Form/Form";
+
 
 const createRoutes = (isLoggedIn, loginHandler) => {
   return createBrowserRouter(
