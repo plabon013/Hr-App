@@ -1,29 +1,27 @@
-import EmployeeCard from "../EmployeeCard/EmployeeCard";
+import { useState } from "react";
 import "./EmployeeList.css";
+import employees from "../../data/employees";
+import EmployeeCard from "../EmployeeCard/EmployeeCard";
 
 const EmployeeList = () => {
-  const employees = [
-    {
-      name: "John Doe",
-      role: "Developer",
-      department: "IT",
-      startDate: "01-10-2022",
-      location: "Helsinki",
-    },
-    {
-      name: "Jane Smith",
-      role: "Designer",
-      department: "Marketing",
-      startDate: "01-05-2022",
-      location: "Oslo",
-    },
-  ];
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const toggleLogin = () => {
+    setIsLoggedIn((prevState) => !prevState);
+  };
 
   return (
-    <div className="employee-list">
-      {employees.map((employee, index) => (
-        <EmployeeCard key={index} {...employee} />
-      ))}
+    <div>
+      <button onClick={toggleLogin}>{isLoggedIn ? "Log Out" : "Log In"}</button>
+      {!isLoggedIn ? (
+        <p>Please log in to see the employee list.</p>
+      ) : (
+        <div className="employee-list">
+          {employees.map((employee) => (
+            <EmployeeCard key={employee.id} {...employee} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
