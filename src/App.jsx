@@ -1,11 +1,22 @@
-import EmployeeList from "./components/EmployeeList/EmployeeList";
+import { useState } from "react";
+import createRoutes from "./routes/Routes";
+import { RouterProvider } from "react-router-dom";
 
 const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const loginHandler = () => {
+    setIsLoggedIn((prev) => !prev);
+  };
+
+  const router = createRoutes(isLoggedIn, loginHandler);
   return (
-    <div>
-      <h1>Employee</h1>
-      <EmployeeList />
-    </div>
+    <RouterProvider
+      router={router}
+      future={{
+        v7_startTransition: true,
+      }}
+    />
   );
 };
 
