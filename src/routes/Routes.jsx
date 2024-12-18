@@ -12,6 +12,7 @@ const createRoutes = (isLoggedIn, loginHandler) => {
       {
         path: "/",
         element: isLoggedIn ? (
+          
           <Root isLoggedIn={isLoggedIn} loginHandler={loginHandler} />
         ) : (
           <Login loginHandler={loginHandler} />

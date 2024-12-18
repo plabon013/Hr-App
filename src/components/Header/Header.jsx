@@ -8,6 +8,7 @@ const Header = ({ isLoggedIn, loginHandler }) => {
   return (
     <header>
       <Link to="/">
+      
         <h1>Employee Dashboard</h1>
       </Link>
       <div>

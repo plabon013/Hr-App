@@ -7,6 +7,7 @@ const Login = ({ loginHandler }) => {
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
+    
     e.preventDefault();
     if (username === "admin" && password === "password") {
       loginHandler();
