@@ -8,18 +8,19 @@ const Login = ({ loginHandler }) => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username === "admin" && password === "password") {
+    if (username === "admin" && password === "admin") {
       loginHandler();
       navigate("/");
     } else {
-      alert("Invalid credentials. Please try again.");
+
+      alert("Invalid credentials.");
     }
   };
 
   return (
     <div>
       <form onSubmit={handleLogin}>
-        <h2>Login</h2>
+        <h2>Use Your Login Credential</h2>
         <label>
           Username:{" "}
           <input
