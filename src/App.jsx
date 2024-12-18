@@ -4,7 +4,6 @@ import { RouterProvider } from "react-router-dom";
 
 const App = () => {ß
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   const loginHandler = () => {
     setIsLoggedIn((prev) => !prev);
   };
