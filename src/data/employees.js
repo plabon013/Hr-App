@@ -1,7 +1,7 @@
 const employees = [
   {
     id: 1,
-    name: "Dallman Marika",
+    name: "Ahola Paula",
     role: "Frontend Developer",
     department: "Development",
     startDate: "2018-08-01",
