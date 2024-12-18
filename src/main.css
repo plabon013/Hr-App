@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #2c3e50;
-  --secondary-color: #ecf0f1;
-  --accent-color: #3498db;
-  --text-color: #2d3436;
+  --primary-color: #29a976;
+  --secondary-color: #d9e8b6;
+  --accent-color: #c971ee;
+  --text-color: #435958;
   --font-family: "Roboto", sans-serif;
 }
 
@@ -20,7 +20,7 @@ h2 {
 
 button {
   background-color: var(--accent-color);
-  color: white;
+  color: rgb(77, 107, 127);
   border: none;
   padding: 0.5em 1em;
   border-radius: 4px;
