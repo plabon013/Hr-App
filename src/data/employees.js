@@ -1,7 +1,7 @@
 const employees = [
   {
     id: 1,
-    name: "Elina Virtanen",
+    name: "Dallman Marika",
     role: "Frontend Developer",
     department: "Development",
     startDate: "2018-08-01",
@@ -9,7 +9,7 @@ const employees = [
   },
   {
     id: 2,
-    name: "John Doe",
+    name: "Antila Anna",
     role: "Backend Developer",
     department: "Development",
     startDate: "2020-09-15",

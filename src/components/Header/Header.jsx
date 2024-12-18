@@ -9,7 +9,7 @@ const Header = ({ isLoggedIn, loginHandler }) => {
     <header>
       <Link to="/">
       
-        <h1>Employee Dashboard</h1>
+        <h1>Dashboard</h1>
       </Link>
       <div>
         <nav>
@@ -21,7 +21,7 @@ const Header = ({ isLoggedIn, loginHandler }) => {
               <Link to="new">Add New</Link>
             </li>
           </ul>
-          {/* <Button onClick={loginHandler} buttonText={buttonText} /> */}
+          {}
         </nav>
       </div>
     </header>

@@ -13,7 +13,7 @@ const Login = ({ loginHandler }) => {
       loginHandler();
       navigate("/");
     } else {
-      alert("Invalid credentials. Please try again.");
+      alert("Invalid credentials.");
     }
   };
 

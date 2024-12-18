@@ -103,9 +103,9 @@ const EmployeeCard = ({
       )}
       <p>Start Date: {startDate}</p>
       <p>Years Worked: {roundedYearsWorked}</p>
-      {isProbation && <p className="reminder">📋 Schedule probation review</p>}
+      {isProbation && <p className="reminder">Probation review time</p>}
       {isAnniversary && (
-        <p className="reminder">🎉 Schedule recognition meeting</p>
+        <p className="reminder">recognition meeting</p>
       )}
       <div className="buttons">
         <Button onClick={promoteToTeamLead} role="primary">
