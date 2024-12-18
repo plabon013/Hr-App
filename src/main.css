@@ -1,8 +1,10 @@
 :root {
+
   --primary-color: #29a976;
   --secondary-color: #d9e8b6;
   --accent-color: #c971ee;
   --text-color: #435958;
+
   --font-family: "Roboto", sans-serif;
 }
 
