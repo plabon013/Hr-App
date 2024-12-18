@@ -11,8 +11,9 @@ const Login = ({ loginHandler }) => {
     if (username === "admin" && password === "admin") {
       loginHandler();
       navigate("/");
-    } else {
-      alert("Invalid credentials. Please try again.");
+    } 
+    else {
+      alert("Invalid credentials.");
     }
   };
 
