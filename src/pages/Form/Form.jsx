@@ -19,7 +19,7 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(employeeData);
-    alert("Employee added successfully!");
+    alert("Added Successfully!");
     setEmployeeData({
       name: "",
       role: "",
